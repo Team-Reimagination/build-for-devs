@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="true" flipX="true" x="0" y="0" sprite="angered_stormy" camy="35">
+	<anim name="idle" anim="Stormy IdleDance" fps="24" loop="false" x="0" y="0"/>
+	<anim name="singDOWN" anim="Stormy singDOWN" fps="24" loop="false" x="80" y="-30"/>
+	<anim name="singLEFT" anim="Stormy singLEFT" fps="24" loop="false" x="160" y="-20"/>
+	<anim name="singRIGHT" anim="Stormy singRIGHT" fps="24" loop="false" x="118" y="-10"/>
+	<anim name="singUP" anim="Stormy singUP" fps="24" loop="false" x="65" y="80"/>
+</character>

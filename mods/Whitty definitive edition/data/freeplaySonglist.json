@@ -1,0 +1,40 @@
+{
+    "addOGSongs": false,
+    "songs": [
+        {
+            "name": "lo-fight",
+            "icon": "whitty",
+            "color": "#AF1400",
+            "coopAllowed": true,
+            "opponentModeAllowed": true
+        },
+        {
+            "name": "overhead",
+            "icon": "whitty",
+            "color": "#AF1400",
+            "coopAllowed": true,
+            "opponentModeAllowed": true
+        },
+        {
+            "name": "ballistic",
+            "icon": "whitty",
+            "color": "#AF1400",
+            "coopAllowed": true,
+            "opponentModeAllowed": true
+        },
+        {
+            "name": "ballistic-remix",
+            "icon": "whitty",
+            "color": "#AF1400",
+            "coopAllowed": true,
+            "opponentModeAllowed": true
+        },
+        {
+            "name": "underground",
+            "icon": "julian",
+            "color": "#1AD5EB",
+            "coopAllowed": true,
+            "opponentModeAllowed": true
+        }
+    ]
+}

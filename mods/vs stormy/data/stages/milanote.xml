@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="2" name="milanote" folder="stages/milanote/">
+	<girlfriend />
+    <sprite name="bg"               x="-600" y="-400"   sprite="foreground"       scroll="1" scale="1.5"/>
+	<dad x="-100" y="150"/>
+	<boyfriend x="1000" />
+    <sprite name="stageFront"       x="400" y="-200"    sprite="red_dash"      scroll="1" />
+</stage>

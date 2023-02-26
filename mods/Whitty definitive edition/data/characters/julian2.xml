@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="false" x="0" y="0" sprite="testis_two_electric_boogaloo" camy="25" icon="julian">
+	<anim name="idle" anim="whitty idle" fps="24" loop="false" x="31" y="-8"/>
+	<anim name="singDOWN" anim="whitty down" fps="24" loop="false" x="70" y="-250"/>
+	<anim name="singLEFT" anim="whitty left" fps="24" loop="false" x="140" y="-50"/>
+	<anim name="singRIGHT" anim="whitty right" fps="24" loop="false" x="100" y="-15"/>
+	<anim name="singUP" anim="whitty up" fps="24" loop="false" x="90" y="30"/>
+</character>

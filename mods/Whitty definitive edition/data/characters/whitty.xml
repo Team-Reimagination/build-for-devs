@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="false" x="0" y="0" sprite="WhittySprites" camy="35">
+	<anim name="idle" anim="Idle" fps="24" loop="false" x="31" y="-8" indices="1,2,3,6,7,8,9,10,11,12,13,14,15"/>
+	<anim name="singDOWN" anim="Sing Down" fps="24" loop="false" x="14" y="-81"/>
+	<anim name="singLEFT" anim="Sing Left" fps="24" loop="false" x="62" y="-29"/>
+	<anim name="singRIGHT" anim="Sing Right" fps="24" loop="false" x="21" y="17"/>
+	<anim name="singUP" anim="Sing Up" fps="24" loop="false" x="19" y="38"/>
+</character>
