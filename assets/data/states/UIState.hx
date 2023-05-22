@@ -1,9 +1,9 @@
-import("funkin.utils.XMLUtil");
+import funkin.backend.utils.XMLUtil;
 import funkin.editors.ui.UITopMenu;
 import StringTools;
 import flixel.input.FlxPointer;
 import flixel.math.FlxPoint;
-import funkin.utils.NativeAPI;
+import funkin.backend.utils.NativeAPI;
 import haxe.io.Path;
 import Xml;
 import sys.FileSystem;
@@ -103,10 +103,10 @@ function update(elapsed) {
 	FlxG.camera.zoom = smoothZoom;
 
 	if (FlxG.keys.justPressed.ESCAPE) FlxG.switchState(new MainMenuState());
-	if (FlxG.keys.justPressed.DELETE) {
-		for (i in samChar.animOffsets) i.set();
-		samChar.globalOffset.set();
-		samChar.setPosition();
+	if (FlxG.keys.justPressed.R) {
+		for (i in samChar.animOffsets) i.set(0,0);
+		samChar.globalOffset.set(0,0);
+		samChar.setPosition(0,0);
 	}
 	if (FlxG.keys.justPressed.LEFT) samChar.playAnim("singLEFT", false, "LOCK");
 	if (FlxG.keys.justPressed.RIGHT) samChar.playAnim("singRIGHT", false, "LOCK");

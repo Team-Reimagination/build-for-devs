@@ -1,5 +1,4 @@
-/*import sys.net.Socket;
-import openfl.net.Socket;
+/*import openfl.net.Socket;
 import funkin.backend.system.Controls;
 
 var waitForOpponent = true;
