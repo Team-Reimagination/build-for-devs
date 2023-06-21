@@ -1,196 +1,168 @@
-import funkin.backend.utils.XMLUtil;
-import funkin.editors.ui.UITopMenu;
-import StringTools;
-import flixel.input.FlxPointer;
-import flixel.math.FlxPoint;
+import flixel.graphics.FlxGraphic;
+import openfl.display.BitmapData;
+import flixel.util.FlxSort;
 import funkin.backend.utils.NativeAPI;
-import haxe.io.Path;
-import Xml;
 import sys.FileSystem;
 import sys.io.File;
-var follower = new FlxSprite();
-var samChar;
-var camHUD = new FlxCamera();
-var sizeComp;
-var dropdown:UITopMenu;
-var uigroup = new FlxTypedGroup();
-var curCharacterList;
-var sillyoulet = new Character(0,0,"zero",false);
-var characterList = [for(e in Paths.getFolderContent('data/characters/')) if (Path.extension(e).toLowerCase() == "xml") e.substr(0, e.length-4)];
+import funkin.backend.assets.ModsFolder;
+import flixel.util.FlxSpriteUtil;
+import StringTools;
+import lime.ui.MouseCursor;
+var assetsGroup = new FlxTypedGroup();
+var curSelected = 0;
+var assetText = new FlxText(10,10,0,"", 24);
+var curStage = "idk";
+var ongoingFrameLoading = false;
+var onDropFile;
+var transformShader = new CustomShader("transform");
 function create() {
-	NativeAPI.allocConsole();
-	FlxG.cameras.add(camHUD, false);
-	camHUD.bgColor = 0;
-	sillyoulet.alpha = 0.6;
-	sillyoulet.setColorTransform(1,1,1,1,255,255,255,255);
-	add(sillyoulet);
-	samChar = new Character(0, 0, "zero", false);
-	add(samChar);
-	sizeComp = new Character(500,0,"zero", true);
-	add(sizeComp);
-	sillyoulet.playAnim("idle", false, "LOCK");
-	samChar.playAnim("idle", false, "LOCK");
-	curCharacterList = [for (i in FlxMath.bound(characterList.indexOf(samChar.curCharacter) - 12, 0, characterList.length)...FlxMath.bound(characterList.indexOf(samChar.curCharacter) + 12, 0, characterList.length)) characterList[i]];
-	var array = [
-	{
-		label: "Select Character",
-		childs: [for (i in curCharacterList) {
-			label: i,
-			onSelect: function(_) {
-				remove(sillyoulet);
-				sillyoulet = new Character(0, 0, i, false);
-				add(sillyoulet);
-				sillyoulet.setColorTransform(1,1,1,1,255,255,255,255);
-				remove(samChar);
-				samChar = new Character(0, 0, i, false);
-				add(samChar);
-				sillyoulet.playAnim("idle", false, "LOCK");
-				samChar.playAnim("idle", false, "LOCK");
-				curCharacterList = [for (i in FlxMath.bound(characterList.indexOf(samChar.curCharacter) - 12, 0, characterList.length)...FlxMath.bound(characterList.indexOf(samChar.curCharacter) + 12, 0, characterList.length)) characterList[i]];
-				for (i in dropdown.members){
-					if (i.label.text == "Select Animation")
-						i.contextMenu = [for (i in samChar.animOffsets.keys()) {
-							label: i,
-							onSelect: function(_) samChar.playAnim(i, false, "LOCK")
-						}];
-					if (i.label.text == "Select Character")
-						i.contextMenu = updateChar();
-				} 
-			}
-		}]
-	},
-	{
-		label: "Select Animation",
-		childs: [for (i in samChar.animOffsets.keys()) {
-			label: i,
-			onSelect: function(_) samChar.playAnim(i, false, "LOCK")
-		}]
-	},
-	{
-		label: "Select Character For Size Comparison",
-		childs: [for (i in curCharacterList) {
-			label: i,
-			onSelect: function(_) {
-				remove(sizeComp);
-				sizeComp = new Character(100, 0, i, true);
-				add(sizeComp);
-				sizeComp.playAnim("idle", false, "LOCK");
-			}
-		}]
-	}];
-	trace(StringTools.replace(array, "},", "}\n"));
-	dropdown = new UITopMenu(array);
-	dropdown.cameras = uigroup.cameras = [camHUD];
-	add(uigroup);
-	add(dropdown);
-	add(follower);
-	var text = new FlxText(0, 0, 1280, "Press H to preview XML in console\nPress J to save XML (overwrite)\nPress arrow keys to play singing animations\nPress WASD to move the offsets
-	(or just use mouse)\nHold SPACE to move size comparison object\nHold SHIFT to move camera offset", 20);
-	text.scrollFactor.set();
-	text.alignment = "right";
-	text.cameras = [camHUD];
-	add(text);
-	FlxG.camera.follow(follower, null, 0.05);
-}
-var lastMousePos;
-var lastSprPos:FlxPoint;
-var smoothZoom = 1;
-var targetZoom = 1;
-function update(elapsed) {
 	FlxG.mouse.visible = true;
-	targetZoom += (FlxG.mouse.wheel / 20) * targetZoom;
-	smoothZoom = CoolUtil.fpsLerp(smoothZoom, targetZoom, 0.05);
-	FlxG.camera.zoom = smoothZoom;
-
-	if (FlxG.keys.justPressed.ESCAPE) FlxG.switchState(new MainMenuState());
-	if (FlxG.keys.justPressed.R) {
-		for (i in samChar.animOffsets) i.set(0,0);
-		samChar.globalOffset.set(0,0);
-		samChar.setPosition(0,0);
+	NativeAPI.allocConsole();
+	FlxG.autoPause = false;
+	if (!Paths.assetsTree.existsSpecific("images/stages/" + curStage,null, ModsFolder.currentModFolder == null)) {
+		trace("does not exist");
+		FileSystem.createDirectory(Paths.assetsTree.getSpecificPath("images/stages/" + curStage, ModsFolder.currentModFolder == null));
 	}
-	if (FlxG.keys.justPressed.LEFT) samChar.playAnim("singLEFT", false, "LOCK");
-	if (FlxG.keys.justPressed.RIGHT) samChar.playAnim("singRIGHT", false, "LOCK");
-	if (FlxG.keys.justPressed.UP) samChar.playAnim("singUP", false, "LOCK");
-	if (FlxG.keys.justPressed.DOWN) samChar.playAnim("singDOWN", false, "LOCK");
-	if (FlxG.keys.justPressed.M) samChar.playAnim("idle", false, "LOCK");
 
-	if (FlxG.keys.justPressed.A) {samChar.animOffsets[samChar.animation.curAnim.name].x += (FlxG.keys.pressed.SHIFT ? 10 : 0.5);
-		samChar.playAnim(samChar.animation.curAnim.name, false, "LOCK");}
-	if (FlxG.keys.justPressed.D) {samChar.animOffsets[samChar.animation.curAnim.name].x -= (FlxG.keys.pressed.SHIFT ? 10 : 0.5);
-		samChar.playAnim(samChar.animation.curAnim.name, false, "LOCK");}
-	if (FlxG.keys.justPressed.W) {samChar.animOffsets[samChar.animation.curAnim.name].y += (FlxG.keys.pressed.SHIFT ? 10 : 0.5);
-		samChar.playAnim(samChar.animation.curAnim.name, false, "LOCK");}
-	if (FlxG.keys.justPressed.S) {samChar.animOffsets[samChar.animation.curAnim.name].y -= (FlxG.keys.pressed.SHIFT ? 10 : 0.5);
-		samChar.playAnim(samChar.animation.curAnim.name, false, "LOCK");}
-
-	if (FlxG.keys.justPressed.H || FlxG.keys.justPressed.J) {
-		var plainXML = Assets.getText(Paths.xml('characters/' + samChar.curCharacter));
-		var xml = Xml.parse(plainXML).firstElement();
-		xml.set("camx", samChar.cameraOffset.x);
-		xml.set("camy", samChar.cameraOffset.y);
-		for (i in xml.elements()){
-			i.set("x", samChar.animOffsets[i.get("name")].x);
-			i.set("y", samChar.animOffsets[i.get("name")].y);
+	onDropFile = function (path:String) {
+		trace(path);
+		var split = path.split("\\");
+		if (FileSystem.isDirectory(path)) {
+			for (i in FileSystem.readDirectory(path)) onDropFile(path + "\\" + i);
+			return;
 		}
-		if (!FlxG.keys.pressed.J) trace(xml.toString());
-		if (FlxG.keys.justPressed.J) {
-			var realXml = "<!DOCTYPE codename-engine-character>\n" + xml.toString();
-			File.saveContent(Assets.getPath(Paths.xml('characters/' + samChar.curCharacter)), realXml);
-			trace(File.getContent(Paths.xml('characters/' + samChar.curCharacter)));
-			var text = new FlxText(0,0,1280,"Saved Offsets", 50);
-			text.screenCenter();
-			text.scrollFactor.set();
-			text.alignment = "center";
-			add(text);
-			FlxTween.tween(text, {y: text.y - 100, alpha:0}, 2, {ease:FlxEase.quartOut, onComplete: function(){remove(text);text.destroy();}});
-		}
-	}
-
-	if (FlxG.mouse.justPressed) {lastMousePos = FlxG.mouse.getPosition();
-		if (FlxG.keys.pressed.SPACE) lastSprPos = FlxPoint.get(sizeComp.x, sizeComp.y);
-		else if (FlxG.keys.pressed.SHIFT) lastSprPos = FlxPoint.get(samChar.cameraOffset.x, samChar.cameraOffset.y);
-		else lastSprPos = FlxPoint.get(samChar.animOffsets[samChar.animation.curAnim.name].x, samChar.animOffsets[samChar.animation.curAnim.name].y);
-	}
-	var antiMouseX = FlxG.mouse.getScreenPosition().x < 400 || FlxG.mouse.getScreenPosition().x > 722;
-	var antiMouseY = FlxG.mouse.getScreenPosition().y < 100 || FlxG.mouse.getScreenPosition().y > 120;
-	if (FlxG.mouse.pressed && antiMouseX || FlxG.mouse.pressed && antiMouseY) {
-		if (FlxG.keys.pressed.SPACE)
-			sizeComp.setPosition(lastSprPos.x + (FlxG.mouse.getPosition().x - lastMousePos.x), lastSprPos.y + (FlxG.mouse.getPosition().y - lastMousePos.y));
-		else if (FlxG.keys.pressed.SHIFT) 
-			samChar.cameraOffset.set(lastSprPos.x + (FlxG.mouse.getPosition().x - lastMousePos.x), lastSprPos.y + (FlxG.mouse.getPosition().y - lastMousePos.y));
-		else {
-			samChar.animOffsets[samChar.animation.curAnim.name].x = (samChar.playerOffsets || samChar.flipX ? lastSprPos.x + (FlxG.mouse.getPosition().x - lastMousePos.x) : lastSprPos.x - (FlxG.mouse.getPosition().x - lastMousePos.x));
-			samChar.animOffsets[samChar.animation.curAnim.name].y = (samChar.isPlayer ? lastSprPos.y + (FlxG.mouse.getPosition().y - lastMousePos.y):lastSprPos.y - (FlxG.mouse.getPosition().y - lastMousePos.y));
-			samChar.playAnim(samChar.animation.curAnim.name, false, "LOCK");
-		}
-		
-	}
-	follower.setPosition(samChar.getCameraPosition().x, samChar.getCameraPosition().y);
-}
-
-function updateChar() {
-	return [for (i in curCharacterList) {
-		label: i,
-		onSelect: function(_) {
-			remove(sillyoulet);
-			sillyoulet = new Character(0, 0, i, false);
-			add(sillyoulet);
-			sillyoulet.setColorTransform(1,1,1,1,255,255,255,255);
-			remove(samChar);
-			samChar = new Character(0, 0, i, false);
-			add(samChar);
-			sillyoulet.playAnim("idle", false, "LOCK");
-			samChar.playAnim("idle", false, "LOCK");
-			curCharacterList = [for (i in FlxMath.bound(characterList.indexOf(samChar.curCharacter) - 12, 0, characterList.length)...FlxMath.bound(characterList.indexOf(samChar.curCharacter) + 12, 0, characterList.length)) characterList[i]];
-			for (i in dropdown.members){
-				if (i.label.text == "Select Animation")
-					i.contextMenu = [for (i in samChar.animOffsets.keys()) {
-						label: i,
-						onSelect: function(_) samChar.playAnim(i, false, "LOCK")
-					}];
-				if (i.label.text == "Select Character")
-					i.contextMenu = updateChar();
+		File.copy(path, Paths.getPath("images/stages/" + curStage + "/" + split[split.length - 1]));
+		var spr = new FunkinSprite();
+		if (split[split.length - 1].split(".")[1] == "png" && FileSystem.exists(StringTools.replace(path,".png", ".xml")) || split[split.length - 1].split(".")[1] == "xml" && FileSystem.exists(StringTools.replace(path,".xml", ".png"))) {
+			trace("oh yes xml time");
+			if (!ongoingFrameLoading) {
+				ongoingFrameLoading = true;
+				return;
+			}
+			else {
+				spr.frames = Paths.getFrames("stages/" + curStage + "/" + split[split.length - 1].split(".")[0]);
+				ongoingFrameLoading = false;
 			}
 		}
-	}];
+		else spr.loadGraphic(Paths.image("stages/" +curStage + "/" + split[split.length - 1].split(".")[0]));
+		spr.screenCenter();
+		assetsGroup.add(spr);
+		spr.ID = assetsGroup.members.indexOf(spr);
+		curSelected = spr.ID;
+	}
+
+	FlxG.stage.window.onDropFile.add(onDropFile);
+	add(assetsGroup);
+	add(assetText);
+}
+var grabbedSprite = false;
+var resizing = false;
+var vertices = [0,0,0,0];
+var skewing = false;
+var rotating = false;
+function postUpdate() {
+	if (FlxG.keys.justPressed.ESCAPE) FlxG.switchState(new MainMenuState());
+	if (assetsGroup.members[curSelected] != null){
+		var spr = assetsGroup.members[curSelected];
+		if (!resizing) {
+			vertices = [0,0,0,0];
+			spr.centerOrigin();
+			skewing = false;
+			if ([for (i in spr.x - 3...spr.x + spr.width + 3) i].contains(FlxG.mouse.x)) {
+				if ([for (i in spr.y...spr.y + spr.height + 3) i].contains(FlxG.mouse.y)) {
+					if ([for (i in spr.x...spr.x + 6) i].contains(FlxG.mouse.x)) vertices[0] = 1;
+					if ([for (i in spr.x + spr.width - 6...spr.x + spr.width) i].contains(FlxG.mouse.x)) vertices[1] = 1;
+				}
+				if ([for (i in spr.y...spr.y + 6) i].contains(FlxG.mouse.y)) vertices[2] = 1;
+				if ([for (i in spr.y + spr.height - 6... spr.y + spr.height) i].contains(FlxG.mouse.y)) vertices[3] = 1;
+
+				if ([for (i in spr.x + (spr.width / 2.2)...spr.x + (spr.width / 1.8)) i].contains(FlxG.mouse.x) || [for (i in spr.y + (spr.height / 2.2)...spr.y + (spr.height / 1.8)) i].contains(FlxG.mouse.y) ||
+					[for (i in spr.x...spr.x + (spr.width * 0.05)) i].contains(FlxG.mouse.x) && [for (i in spr.y...spr.y + (spr.height * 0.05)) i].contains(FlxG.mouse.y) ||
+					[for (i in spr.x + (spr.width / 1.05)...(spr.x + spr.width)) i].contains(FlxG.mouse.x) && [for (i in spr.y...spr.y + (spr.height * 0.05)) i].contains(FlxG.mouse.y) ||
+					[for (i in spr.x...spr.x + (spr.width * 0.1)) i].contains(FlxG.mouse.x) && [for (i in spr.y + (spr.height / 1.05)...(spr.y + spr.height)) i].contains(FlxG.mouse.y) ||
+					[for (i in spr.x + (spr.width / 1.05)...(spr.x + spr.width)) i].contains(FlxG.mouse.x) && [for (i in spr.y + (spr.height / 1.05)...(spr.y + spr.height)) i].contains(FlxG.mouse.y)) skewing = false;
+				else skewing = true;
+			}
+		}
+		if (!vertices.contains(1)) {
+			if (FlxG.mouse.overlaps(spr)) {
+				if (FlxG.mouse.justPressed) grabbedSprite = true;
+				FlxG.stage.window.cursor = MouseCursor.MOVE;
+			}
+			if (FlxG.mouse.justReleased && grabbedSprite) grabbedSprite = false;
+			if (grabbedSprite && FlxG.mouse.pressed) {
+				spr.x += FlxG.mouse.deltaX;
+				spr.y += FlxG.mouse.deltaY;
+			}
+		}
+		else {
+			if (FlxG.mouse.justPressed) resizing = true;
+			var thing = [spr.width, spr.height];
+			if (resizing) {
+				if (skewing) {
+					spr.skew.y += (vertices[1] - vertices[0]) * (FlxG.mouse.deltaY / 2);
+					spr.skew.x += (vertices[3] - vertices[2]) * (FlxG.mouse.deltaX / 2);
+					if (FlxG.keys.pressed.ALT) {
+						if (vertices[0] == 1 || vertices[1] == 1) spr.y += FlxG.mouse.deltaY;
+						if (vertices[2] == 1 || vertices[3] == 1) spr.x += FlxG.mouse.deltaX;
+					}
+				}
+				else {
+					thing[0] = Math.max(thing[0] + (vertices[1] - vertices[0]) * FlxG.mouse.deltaX, 1);
+					thing[1] = Math.max(thing[1] + (vertices[3] - vertices[2]) * FlxG.mouse.deltaY, 1);
+					spr.x -= (FlxG.keys.pressed.ALT ? (thing[0] - spr.width) / 2 : vertices[0] == 1 ? thing[0] - spr.width : 0);
+					spr.y -= (FlxG.keys.pressed.ALT ? (thing[1] - spr.height) / 2 : vertices[2] == 1 ? thing[1] - spr.height : 0);
+				}
+
+			}
+			if (FlxG.mouse.justReleased) resizing = false;
+			spr.scale.set(thing[0] / spr.frameWidth, thing[1] / spr.frameHeight);
+			spr.updateHitbox();
+		}
+		if (vertices[0] + vertices[2] == 2 || vertices[1] + vertices[3] == 2) FlxG.stage.window.cursor = MouseCursor.RESIZE_NWSE;
+		else if (vertices[1] + vertices[2] == 2 || vertices[0] + vertices[3] == 2) FlxG.stage.window.cursor = MouseCursor.RESIZE_NESW;
+		else if (vertices[0] == 1 || vertices[1] == 1) FlxG.stage.window.cursor = skewing ? MouseCursor.RESIZE_NS : MouseCursor.RESIZE_WE;
+		else if (vertices[2] == 1 || vertices[3] == 1) FlxG.stage.window.cursor = skewing ? MouseCursor.RESIZE_WE : MouseCursor.RESIZE_NS;
+	}
+	if (FlxG.mouse.wheel != 0) {
+		if (FlxG.keys.pressed.CONTROL && curSelected + FlxMath.signOf(FlxG.mouse.wheel) < assetsGroup.members.length && curSelected + FlxMath.signOf(FlxG.mouse.wheel) >= 0) {
+			curSelected = curSelected + FlxMath.signOf(FlxG.mouse.wheel);
+			assetText.text = "Asset #" + curSelected + " selected";
+			FlxTween.cancelTweensOf(assetText);
+			assetText.alpha = 1;
+			FlxTween.tween(assetText, {alpha:0}, 0.3, {startDelay: 0.5});
+			for (i in assetsGroup.members) {
+				if (i.ID != curSelected) {
+					i.alpha = 0.2;
+					i.shader = null;
+				}
+				else {
+					i.alpha = 1;
+					trace(i.shader);
+					i.shader = transformShader;
+					trace(i.shader);
+				}
+			}
+		}
+		else if (!FlxG.keys.pressed.CONTROL)
+			FlxG.camera.zoom += FlxG.mouse.wheel * FlxG.camera.zoom * 0.1;
+	}
+	if (FlxG.keys.justPressed.DOWN) changeOrder(-1);
+	if (FlxG.keys.justPressed.UP) changeOrder(1);
+
+}
+function changeOrder(by) {
+	var spr = assetsGroup.members[curSelected];
+	if (spr.ID + by >= 0) {
+		assetsGroup.remove(spr, true);
+		assetsGroup.insert(spr.ID + by, spr);
+		for (i in assetsGroup.members) i.ID = assetsGroup.members.indexOf(i);
+		curSelected = spr.ID;
+
+		assetText.text = "Changed order to " + assetsGroup.members[curSelected].ID;
+		FlxTween.cancelTweensOf(assetText);
+		assetText.alpha = 1;
+		FlxTween.tween(assetText, {alpha:0}, 0.3, {startDelay: 0.5});
+	}
+	
 }

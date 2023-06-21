@@ -2,6 +2,7 @@ import flixel.effects.particles.FlxTypedEmitter;
 import flixel.addons.effects.FlxTrailArea;
 var oiiaoiia = false;
 var vignetter = new CustomShader("vignette");
+var bloomer = new CustomShader("B&Wbloom");
 var fisheyer = new CustomShader("fisheye");
 var textGrp = new FlxGroup();
 var emitter = new FlxTypedEmitter(-500, -200, 1000);
@@ -167,6 +168,8 @@ function stepHit(curStep) {
 			newCam.destroy();
 		}});
 		FlxG.cameras.add(newCam, false);
+		FlxG.cameras.remove(camHUD, false);
+		FlxG.cameras.add(camHUD, false);
 		FlxG.cameras.bgColor = 0x00000000;
 		for (i in members) {
 			if (i != bf && i?.cameras?.contains(newCam)) i?.cameras?.remove(newCam);
@@ -192,10 +195,12 @@ function beatHit(curBeat) {
 		for (i in textGrp) i.alpha = 0.4;
 		defaultCamZoom = 1.4;
 		FlxG.camera.scroll.y -= 45;
+		FlxG.camera.stopFX();
 		FlxG.camera.fade(0xFFFFFFFF, Conductor.crochet / 1000, true);
 		var tween = FlxTween.tween(bf, {x: FlxG.random.float(-400, 400), y: FlxG.random.float(-200, 200)}, (Conductor.crochet / 1000) * 0.15, {type: 1, ease: FlxEase.quartIn});
 		tween.onComplete = function(twn) {
-			twn.then(FlxTween.tween(bf, {x: FlxG.random.float(-400, 400), y: FlxG.random.float(-200, 200)}, (Conductor.crochet / 1000) * 0.15, {type: 1, onComplete: tween.onComplete, ease: FlxEase.quartIn}));
+			var random = [FlxG.random.float(-400, 400), FlxG.random.float(-200, 200)];
+			twn.then(FlxTween.tween(bf, {x: random[0], y: random[1]}, (Conductor.crochet / 1000) * 0.25 * Math.sqrt(Math.abs((bf.x-random[0]) * (bf.y-random[1])) / 100000), {type: 1, onComplete: tween.onComplete, ease: FlxEase.quartInOut}));
 		}
 		case 60: spinner.visible = true;
 		FlxTween.cancelTweensOf(bf);
