@@ -2,7 +2,7 @@ import funkin.system.FunkinSprite;
 var shader = new CustomShader("colorizer");
 var bar1:FunkinSprite = new FunkinSprite(0, -560).makeGraphic(1600 * 2, 560, 0xFF000000);
 var bar2:FunkinSprite = new FunkinSprite(0, 720).makeGraphic(1600 * 2, 560, 0xFF000000);
-var camStripes = new FlxCamera;
+var camStripes = new FlxCamera();
 function create() {
 	add(camStripes);
 	importScript("data/scripts/camera");
@@ -21,6 +21,12 @@ function create() {
 	remove(stage.getSprite("effect"));
 	add(stage.getSprite("effect"));
 	stage.getSprite("effect").cameras = [camHUD];
+}
+function postUpdate() {
+	for (i in strumLines.members[0].members) {
+		i.y = 500;
+		i.noteAngle = 180;
+	}
 }
 function update(elapsed) {
 	stage.getSprite("effect").alpha = Math.abs(Math.sin(1.5 * (Conductor.songPosition / 1000)));
