@@ -2,7 +2,7 @@
 	"song": {
 		"player1": "bf",
 		"events": [],
-		"gfVersion": "gf_whitty",
+		"gfVersion": "gf-whitty",
 		"notes": [
 			{
 				"sectionNotes": [],
@@ -11441,10 +11441,15 @@
 				"mustHitSection": true
 			}
 		],
+<<<<<<< Updated upstream
 		"player2": "whitBonkers",
 		"player3": "gf_whitty",
+=======
+		"player2": "whittyBonkers",
+		"player3": "gf-whitty",
+>>>>>>> Stashed changes
 		"song": "ballistic",
-		"stage": "alley-balls",
+		"stage": "alleyBalls",
 		"arrowSkin": "",
 		"needsVoices": true,
 		"validScore": true,
