@@ -18,7 +18,7 @@ function postCreate() {
 	scrollBarCamera.bgColor = 0;
 	gridCamera.flashSprite.scaleY = -1;
 	scrollBarCamera.flashSprite.scaleY = -1;
-	notesGroup.camera = eventsGroup.camera = selectionBox.camera = strumlineAddButton.camera = strumlineLockButton.camera = strumlineInfoBG.camera = strumLines.camera = charterCamera;
+	eventsGroup.camera = selectionBox.camera = strumlineAddButton.camera = strumlineLockButton.camera = strumlineInfoBG.camera = strumLines.camera = notesGroup.camera = charterCamera;
 	addEventSpr.cameras = [charterCamera];
 	gridBackdrops.cameras = eventsBackdrop.cameras = charterBG.cameras = [gridCamera];
 	charterBG.zoomFactor = 1;
@@ -37,8 +37,11 @@ function preUpdate(elapsed) {
 	}
 }
 function postUpdate(elapsed) {
-	for (i in notesGroup.members)
-		if (i.flipY != true) i.flipY = true;
+	for (i in notesGroup.members) {
+		if ([1,2].contains(i.id)) i.flipY = true;
+		else i.flipX = true;
+	}
+		
 	FlxG.mouse._globalScreenY = __lastMouse;
 	gridCamera.scroll = charterCamera.scroll;
 	gridCamera.zoom = charterCamera.zoom;
