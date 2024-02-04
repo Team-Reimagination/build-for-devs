@@ -1,5 +1,0 @@
-<!DOCTYPE codename-engine-stage>
-<stage zoom="0.8" name="alley" folder="stages/alley/">
-    <sprite name="bg"               x="-600" y="-200"   sprite="whittyBack"       scroll="1" />
-    <sprite name="stageFront"       x="-600" y="600"    sprite="whittyFront"      scroll="1" />
-</stage>

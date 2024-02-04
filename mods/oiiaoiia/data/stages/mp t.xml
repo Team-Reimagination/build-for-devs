@@ -1,5 +1,0 @@
-<!DOCTYPE codename-engine-stage>
-<stage zoom="1.4" name="stage" folder="stages/default/">
-   <box name="bg" x="-800" y="-200" scroll="0" width="1280" height="720"/>
-   <boyfriend x="0" y="0" />
-</stage>

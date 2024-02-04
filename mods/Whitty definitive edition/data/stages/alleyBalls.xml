@@ -1,8 +1,0 @@
-<!DOCTYPE codename-engine-stage>
-<stage zoom="0.8" name="alleyBalls" folder="stages/alleyBalls/">
-    <sprite name="bg" x="-600" y="-200" sprite="BallisticBackground" scroll="1" />
-	<girlfriend />
-	<dad />
-	<boyfriend />
-	<sprite name="effect" x="-600" y="-300" sprite="thefunnyeffect" scroll="0" scale="0.6"/>
-</stage>
