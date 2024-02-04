@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-stage []>
+<stage zoom="0.8">
+  <gf />
+  <sprite name="stageFront" x="-300" y="-50" sprite="HD_Blue_Screen" />
+  <bf y="150"/>
+  <dad y="250" x="200"/>
+  <sprite name="idfk" x="-300" y="450" sprite="aeasd_n" scroll="1.5" scale="2">
+    <anim name="idle" fps="24" loop="false" anim="creed instance 1" type="1" />
+  </sprite>
+</stage>

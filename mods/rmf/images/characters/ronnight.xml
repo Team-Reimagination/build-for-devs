@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ronnight.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rondown instance 10000" x="0" y="0" width="443" height="472" frameX="0" frameY="-1" frameWidth="443" frameHeight="473"/>
+	<SubTexture name="rondown instance 10001" x="0" y="0" width="443" height="472" frameX="0" frameY="-1" frameWidth="443" frameHeight="473"/>
+	<SubTexture name="rondown instance 10002" x="443" y="0" width="439" height="473" frameX="0" frameY="0" frameWidth="443" frameHeight="473"/>
+	<SubTexture name="ronidle instance 10000" x="882" y="0" width="351" height="537" frameX="-3" frameY="-76" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10001" x="1233" y="0" width="343" height="565" frameX="-2" frameY="-48" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10002" x="1576" y="0" width="341" height="576" frameX="-1" frameY="-37" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10003" x="1917" y="0" width="338" height="584" frameX="-1" frameY="-29" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10004" x="2255" y="0" width="336" height="591" frameX="-1" frameY="-23" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10005" x="2591" y="0" width="334" height="595" frameX="-1" frameY="-18" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10006" x="2925" y="0" width="333" height="598" frameX="-1" frameY="-15" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10007" x="3258" y="0" width="331" height="602" frameX="-1" frameY="-11" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10008" x="3589" y="0" width="330" height="603" frameX="-1" frameY="-10" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10009" x="3919" y="0" width="329" height="605" frameX="-1" frameY="-8" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10010" x="4248" y="0" width="328" height="607" frameX="-1" frameY="-6" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10011" x="4576" y="0" width="329" height="609" frameX="0" frameY="-4" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10012" x="4905" y="0" width="328" height="610" frameX="0" frameY="-3" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10013" x="5233" y="0" width="328" height="611" frameX="0" frameY="-2" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10014" x="5561" y="0" width="327" height="612" frameX="0" frameY="-1" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10015" x="5888" y="0" width="327" height="612" frameX="0" frameY="-1" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10016" x="6215" y="0" width="327" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10017" x="6542" y="0" width="327" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10018" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10019" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10020" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10021" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10022" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10023" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10024" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10025" x="6869" y="0" width="326" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10026" x="7195" y="0" width="327" height="613" frameX="0" frameY="0" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10027" x="7522" y="0" width="327" height="612" frameX="0" frameY="-1" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10028" x="7849" y="0" width="327" height="612" frameX="-1" frameY="-1" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10029" x="0" y="613" width="329" height="611" frameX="-1" frameY="-2" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10030" x="329" y="613" width="330" height="609" frameX="-1" frameY="-4" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10031" x="659" y="613" width="333" height="607" frameX="-1" frameY="-6" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10032" x="992" y="613" width="335" height="605" frameX="-1" frameY="-8" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10033" x="1327" y="613" width="339" height="603" frameX="-1" frameY="-11" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10034" x="1666" y="613" width="343" height="599" frameX="-1" frameY="-14" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10035" x="2009" y="613" width="348" height="595" frameX="-1" frameY="-19" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10036" x="2357" y="613" width="354" height="589" frameX="-1" frameY="-25" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10037" x="2711" y="613" width="361" height="581" frameX="-2" frameY="-33" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10038" x="3072" y="613" width="374" height="568" frameX="-2" frameY="-46" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10039" x="3446" y="613" width="408" height="528" frameX="-4" frameY="-86" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10040" x="3854" y="613" width="420" height="512" frameX="-5" frameY="-102" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10041" x="4274" y="613" width="428" height="503" frameX="-5" frameY="-111" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10042" x="4702" y="613" width="434" height="494" frameX="-5" frameY="-120" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10043" x="5136" y="613" width="438" height="488" frameX="-6" frameY="-126" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10044" x="5574" y="613" width="442" height="482" frameX="-6" frameY="-131" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10045" x="6016" y="613" width="445" height="479" frameX="-6" frameY="-135" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10046" x="6461" y="613" width="448" height="475" frameX="-6" frameY="-138" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10047" x="6909" y="613" width="450" height="472" frameX="-6" frameY="-141" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10048" x="7359" y="613" width="451" height="470" frameX="-7" frameY="-143" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10049" x="0" y="1224" width="452" height="465" frameX="-7" frameY="-148" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10050" x="452" y="1224" width="453" height="467" frameX="-7" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10051" x="905" y="1224" width="454" height="466" frameX="-7" frameY="-147" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10052" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10053" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10054" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10055" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10056" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10057" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10058" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10059" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10060" x="1359" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10061" x="1814" y="1224" width="455" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10062" x="2269" y="1224" width="454" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10063" x="2723" y="1224" width="454" height="467" frameX="-6" frameY="-146" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10064" x="3177" y="1224" width="453" height="468" frameX="-6" frameY="-145" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10065" x="3630" y="1224" width="452" height="468" frameX="-6" frameY="-145" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10066" x="4082" y="1224" width="452" height="469" frameX="-6" frameY="-144" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10067" x="4534" y="1224" width="451" height="470" frameX="-6" frameY="-143" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10068" x="4985" y="1224" width="449" height="471" frameX="-6" frameY="-142" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10069" x="5434" y="1224" width="448" height="472" frameX="-6" frameY="-141" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10070" x="5882" y="1224" width="446" height="473" frameX="-6" frameY="-140" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10071" x="6328" y="1224" width="445" height="475" frameX="-6" frameY="-138" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10072" x="6773" y="1224" width="443" height="476" frameX="-6" frameY="-137" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10073" x="7216" y="1224" width="440" height="478" frameX="-6" frameY="-135" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10074" x="7656" y="1224" width="438" height="480" frameX="-6" frameY="-133" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10075" x="0" y="1704" width="435" height="483" frameX="-6" frameY="-130" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10076" x="435" y="1704" width="431" height="485" frameX="-6" frameY="-128" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10077" x="866" y="1704" width="427" height="488" frameX="-6" frameY="-125" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10078" x="1293" y="1704" width="424" height="492" frameX="-5" frameY="-121" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10079" x="1717" y="1704" width="419" height="495" frameX="-5" frameY="-118" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10080" x="2136" y="1704" width="413" height="500" frameX="-5" frameY="-113" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10081" x="2549" y="1704" width="405" height="505" frameX="-5" frameY="-108" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10082" x="2954" y="1704" width="396" height="512" frameX="-4" frameY="-101" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronidle instance 10083" x="3350" y="1704" width="382" height="519" frameX="-4" frameY="-94" frameWidth="461" frameHeight="614"/>
+	<SubTexture name="ronleft instance 10000" x="3732" y="1704" width="392" height="562"/>
+	<SubTexture name="ronleft instance 10001" x="3732" y="1704" width="392" height="562"/>
+	<SubTexture name="ronleft instance 10002" x="4124" y="1704" width="391" height="560" frameX="-1" frameY="-2" frameWidth="392" frameHeight="562"/>
+	<SubTexture name="ronreload instance 10000" x="4515" y="1704" width="386" height="553" frameX="0" frameY="-1" frameWidth="386" frameHeight="554"/>
+	<SubTexture name="ronreload instance 10001" x="4901" y="1704" width="386" height="553" frameX="0" frameY="-1" frameWidth="386" frameHeight="554"/>
+	<SubTexture name="ronreload instance 10002" x="5287" y="1704" width="379" height="553" frameX="0" frameY="-1" frameWidth="386" frameHeight="554"/>
+	<SubTexture name="ronreload instance 10003" x="5666" y="1704" width="378" height="553" frameX="0" frameY="-1" frameWidth="386" frameHeight="554"/>
+	<SubTexture name="ronreload instance 10004" x="6044" y="1704" width="381" height="554" frameX="0" frameY="0" frameWidth="386" frameHeight="554"/>
+	<SubTexture name="ronreload instance 10005" x="6425" y="1704" width="386" height="554"/>
+	<SubTexture name="ronreload instance 10006" x="6811" y="1704" width="386" height="554"/>
+	<SubTexture name="ronreload instance 10007" x="7197" y="1704" width="386" height="554"/>
+	<SubTexture name="ronright instance 10000" x="7583" y="1704" width="467" height="509"/>
+	<SubTexture name="ronright instance 10001" x="7583" y="1704" width="467" height="509"/>
+	<SubTexture name="ronright instance 10002" x="0" y="2266" width="464" height="509" frameX="0" frameY="0" frameWidth="467" frameHeight="509"/>
+	<SubTexture name="ronshoot instance 10000" x="464" y="2266" width="386" height="553" frameX="-23" frameY="-224" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10001" x="850" y="2266" width="489" height="706" frameX="-22" frameY="-71" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10002" x="1339" y="2266" width="556" height="711" frameX="0" frameY="-66" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10003" x="1895" y="2266" width="561" height="750" frameX="-15" frameY="-27" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10004" x="2456" y="2266" width="575" height="766" frameX="-19" frameY="-11" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10005" x="3031" y="2266" width="583" height="777" frameX="-23" frameY="0" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10006" x="3614" y="2266" width="546" height="743" frameX="-23" frameY="-34" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10007" x="4160" y="2266" width="388" height="553" frameX="-23" frameY="-224" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10008" x="4548" y="2266" width="389" height="553" frameX="-23" frameY="-224" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronshoot instance 10009" x="4937" y="2266" width="389" height="553" frameX="-23" frameY="-224" frameWidth="606" frameHeight="777"/>
+	<SubTexture name="ronup instance 10000" x="5326" y="2266" width="370" height="548"/>
+	<SubTexture name="ronup instance 10001" x="5326" y="2266" width="370" height="548"/>
+	<SubTexture name="ronup instance 10002" x="5696" y="2266" width="366" height="547" frameX="-1" frameY="-1" frameWidth="370" frameHeight="548"/>
+</TextureAtlas>

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="false" x="0" y="0" sprite="ronnightalt" camy="50" camx="100">
+	<anim name="idle" anim="ronidle" fps="24" loop="true" x="40" y="-30"/>
+	<anim name="singDOWN" anim="rondown" fps="24" loop="false" x="-4" y="-183"/>
+	<anim name="singLEFT" anim="ronleft" fps="24" loop="false" x="93" y="-82.5"/>
+	<anim name="singRIGHT" anim="ronright" fps="24" loop="false" x="80.5" y="-94.5"/>
+	<anim name="singUP" anim="ronup" fps="24" loop="false" x="14" y="-43.5"/>
+</character>
