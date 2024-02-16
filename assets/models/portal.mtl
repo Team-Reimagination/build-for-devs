@@ -1,0 +1,1108 @@
+# Blender 3.5.1 MTL File: 'portal map source.blend'
+# www.blender.org
+
+newmtl ?.vmt
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl materials/anim_wp/framework/backpanels_color01_nospec
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_anim_wp_framework_backpanels_color01.png
+
+newmtl materials/anim_wp/framework/backpanels_color01b
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.250000 0.250000 0.250000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_anim_wp_framework_backpanels_color01b.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_metal_metalwall_bts_006a_normal.png
+
+newmtl materials/anim_wp/framework/backpanels_nospec
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_anim_wp_framework_backpanels.png
+
+newmtl materials/anim_wp/framework/squarebeams
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_anim_wp_framework_squarebeams_main.png
+
+newmtl materials/metal/backstage_grate_002b
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_backstage_grate_002b.png
+map_d C:/Users/Frakits/Desktop/textures/materials_metal_backstage_grate_002b.png
+
+newmtl materials/metal/black_floor_metal_001d
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.300000 0.300000 0.300000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_black_floor_metal_001d.png
+
+newmtl materials/metal/black_wall_metal_002a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_black_wall_metal_002a.png
+
+newmtl materials/metal/black_wall_metal_002b
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_black_wall_metal_002b.png
+
+newmtl materials/metal/black_wall_metal_002c
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_black_wall_metal_002c.png
+
+newmtl materials/metal/black_wall_metal_002c_vertex
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_black_wall_metal_002c.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_metal_black_wall_metal_002c_normal.png
+
+newmtl materials/metal/factory_metal_floor001a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.125000 0.125000 0.125000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_metal_factory_metal_floor001a.png
+
+newmtl materials/models/anim_wp/circle_shield/circle_shield_glass
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_anim_wp_circle_shield_circle_shield_glass.png
+map_d C:/Users/Frakits/Desktop/textures/~NOyTYmKw_anim_wp_circle_shield_circle_shield_glass.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~tbsk-_b7_circle_shield_circle_shield_glass_normal.png
+
+newmtl materials/models/anim_wp/circle_shield/circle_shield_main
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_anim_wp_circle_shield_circle_shield_main.png
+
+newmtl materials/models/anim_wp/circle_shield/circle_shield_red
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_anim_wp_circle_shield_circle_shield_red.png
+
+newmtl materials/models/anim_wp/core_arm_door_01
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arm_door_01.png
+
+newmtl materials/models/anim_wp/core_arm_door_02
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arm_door_02.png
+
+newmtl materials/models/anim_wp/core_arm_door_03
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arm_door_03.png
+
+newmtl materials/models/anim_wp/core_arms
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arms.png
+
+newmtl materials/models/anim_wp/core_arms_off
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arms_off.png
+
+newmtl materials/models/anim_wp/core_arms_red
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_core_arms_red.png
+
+newmtl materials/models/anim_wp/framework/squarebeams
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_framework_squarebeams_main.png
+
+newmtl materials/models/anim_wp/framework/squarebeams_skin2
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_framework_squarebeams_skin2.png
+
+newmtl materials/models/anim_wp/framework/squarebeams_skin3
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_framework_squarebeams_skin3.png
+
+newmtl materials/models/anim_wp/psphere_plug
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_anim_wp_psphere_plug.png
+
+newmtl materials/models/elevator/elevator
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator.png
+
+newmtl materials/models/elevator/elevator_body
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_body.png
+
+newmtl materials/models/elevator/elevator_body_escape
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_body_escape.png
+
+newmtl materials/models/elevator/elevator_grass_break01
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break01.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break01.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_backstage_vacum_pipe_glass_normal.png
+
+newmtl materials/models/elevator/elevator_grass_break02
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break02.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break02.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_backstage_vacum_pipe_glass_normal.png
+
+newmtl materials/models/elevator/elevator_grass_break03
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break03.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break03.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_backstage_vacum_pipe_glass_normal.png
+
+newmtl materials/models/elevator/elevator_grass_break04
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break04.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_grass_break04.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_backstage_vacum_pipe_glass_normal.png
+
+newmtl materials/models/elevator/elevator_main_a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_main_a.png
+
+newmtl materials/models/elevator/elevator_main_b
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_elevator_elevator_main_b.png
+
+newmtl materials/models/npcs/glados/glados_disc
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_glados_disc.png
+
+newmtl materials/models/npcs/glados/glados_disc_base
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_glados_disc_base.png
+
+newmtl materials/models/npcs/glados/glados_disc_skin02
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_glados_disc_skin02.png
+
+newmtl materials/models/npcs/glados_maintenance/maintenance01
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_maintenance_maintenance01.png
+
+newmtl materials/models/npcs/glados_maintenance/maintenance02
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_maintenance_maintenance02.png
+
+newmtl materials/models/npcs/glados_maintenance/red_arm_exterior
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_npcs_glados_maintenance_red_arm_exterior.png
+
+newmtl materials/models/npcs/glados_maintenance/red_interior_arm
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_npcs_glados_maintenance_red_interior_arm.png
+
+newmtl materials/models/npcs/glados_maintenance/red_pincer
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_maintenance_red_pincer.png
+
+newmtl materials/models/npcs/glados_maintenance/red_robot_arms
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_glados_maintenance_red_robot_arms.png
+
+newmtl materials/models/npcs/turret/turret_broken
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_broken.png
+
+newmtl materials/models/npcs/turret/turret_broken_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_broken.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_broken_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_broken.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_casing
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_casing.png
+
+newmtl materials/models/npcs/turret/turret_casing_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_casing.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_casing_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_casing.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_eye
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_eye.png
+
+newmtl materials/models/npcs/turret/turret_eye_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_eye.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_eye_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_eye.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_frame01
+Ns 608.399963
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame01.png
+
+newmtl materials/models/npcs/turret/turret_frame01_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame01.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_frame01_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame01.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_frame02
+Ns 608.399963
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame02.png
+
+newmtl materials/models/npcs/turret/turret_frame02_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame02.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/npcs/turret/turret_frame02_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_frame02.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_npcs_turret_turret_paint_normal.png
+
+newmtl materials/models/props/metal_box
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_normal.png
+
+newmtl materials/models/props/metal_box_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/metal_box_skin001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin001.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_normal.png
+
+newmtl materials/models/props/metal_box_skin001_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin001.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/metal_box_skin001_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin001.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/metal_box_skin002
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin002.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_normal.png
+
+newmtl materials/models/props/metal_box_skin002_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin002.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/metal_box_skin002_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin002.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/metal_box_skin003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin003.png
+
+newmtl materials/models/props/metal_box_skin004
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin004.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_normal.png
+
+newmtl materials/models/props/metal_box_skin005
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_skin005.png
+
+newmtl materials/models/props/metal_box_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/pedestal
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_pedestal.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_pedestal_normal.png
+
+newmtl materials/models/props/pincher
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_pincher.png
+
+newmtl materials/models/props/reflecto_cube_glass
+Ns 121.661446
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_glass.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_glass.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_glass_normal.png
+
+newmtl materials/models/props/reflecto_cube_shell
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_shell.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_models_props_metal_box_normal.png
+
+newmtl materials/models/props/reflecto_cube_shell_bounce
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_shell.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props/reflecto_cube_shell_rusted
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_shell_rusted.png
+
+newmtl materials/models/props/reflecto_cube_shell_speed
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_reflecto_cube_shell.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_paint_prop_paint_normal.png
+
+newmtl materials/models/props_backstage/vacum_pipe
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_backstage_vacum_pipe.png
+
+newmtl materials/models/props_backstage/vacum_pipe_glass
+Ns 313.600006
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_backstage_vacum_pipe_glass.png
+map_d C:/Users/Frakits/Desktop/textures/materials_models_props_backstage_vacum_pipe_glass.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_backstage_vacum_pipe_glass_normal.png
+
+newmtl materials/models/props_backstage/vacum_pipe_selfillum
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_backstage_vacum_pipe_selfillum.png
+
+newmtl materials/models/props_basement/shaftswitches
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_basement_shaftswitches.png
+
+newmtl materials/models/props_basement/shaftswitches_platform
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_basement_shaftswitches_platform.png
+
+newmtl materials/models/props_bts/light_hanging
+Ns 147.455994
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_bts_light_hanging.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_dev_flat_normal.png
+
+newmtl materials/models/props_bts/light_hanging_off
+Ns 147.455994
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_props_bts_light_hanging.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/materials_dev_flat_normal.png
+
+newmtl materials/models/props_destruction/glass_92x112_e_frosted
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_destruction_glass_92x112_e_frosted.png
+map_d C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_destruction_glass_92x112_e_frosted.png
+
+newmtl materials/models/props_destruction/glass_fracture_a_inner
+Ns 608.399963
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_props_destruction_glass_fracture_a_inner.png
+
+newmtl materials/models/props_destruction/glass_fracture_e_normal
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl materials/models/props_destruction/glass_fracture_f_normal
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl materials/models/props_destruction/glass_fracture_g_normal
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl materials/models/weapons/camera
+Ns 183.183975
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_models_weapons_camera.png
+
+newmtl materials/nature/dirtfloor004b
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_nature_dirtfloor004b.png
+
+newmtl materials/plastic/plasticwall004a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_plastic_plasticwall004a.png
+
+newmtl materials/plastic/plasticwall004a_dirty
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_plastic_plasticwall004a_dirty.png
+
+newmtl materials/props/core_hatch01
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_props_core_hatch01.png
+
+newmtl materials/props/plasticwall003a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_props_plasticwall003a.png
+
+newmtl materials/props/plasticwall003a_cheap
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_props_plasticwall003a.png
+
+newmtl materials/signage/logo_aperture_lg
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_signage_logo_aperture_lg.png
+
+newmtl materials/tile/observation_tilefloor003a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_tile_observation_tilefloor003a.png
+
+newmtl materials/tile/white_floor_tile002a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_tile_white_floor_tile002a.png
+
+newmtl materials/tile/white_wall_tile003a
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/materials_tile_white_wall_tile003a.png
+
+newmtl materials/tools/toolsblack
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/Frakits/Desktop/textures/materials_tools_toolsblack.png
+
+newmtl materials/tools/toolsblack_noportal
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/Frakits/Desktop/textures/materials_tools_toolsblack.png
+
+newmtl materials/tools/toolsnodraw
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl ~NOyTYmKw/anim_wp/arm_interior_192/arm_interior_192_bose
+Ns 147.455994
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~tbsk-_b7_arm_interior_192_arm_interior_192_bose.png
+
+newmtl ~NOyTYmKw/anim_wp/arm_interior_192/arm_motionplatform
+Ns 147.455994
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_anim_wp_arm_interior_192_arm_motionplatform.png
+
+newmtl ~NOyTYmKw/catwalk_destruction/arm_64x64_exterior_lowres
+Ns 154.291824
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~NOyTYmKw_catwalk_destruction_arm_64x64_exterior_lowres.png
+
+newmtl ~NOyTYmKw/props/glados_ceiling_light/glados_ceiling_light
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/Frakits/Desktop/textures/~0evDWNWi_glados_ceiling_light_glados_ceiling_light.png
+map_Bump -bm 1.000000 C:/Users/Frakits/Desktop/textures/~0evDWNWi_glados_ceiling_light_glados_ceiling_light_n.png
