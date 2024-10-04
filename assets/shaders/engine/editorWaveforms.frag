@@ -14,7 +14,7 @@ uniform float pixelOffset;
 uniform float playerPosition;
 
 uniform sampler2D waveformTexture;
-uniform ivec2 waveformSize;
+uniform vec2 waveformSize;
 
 uniform bool lowDetail;
 
@@ -22,7 +22,7 @@ float getAmplitude(vec2 pixel) {
 	float pixelID = floor((pixel.y+pixelOffset)/3.0);
 
 	// TODO: INVESTIGATE THE 1.+ AND WHY IT WORKS (SRSLY I GOT NO CLUE) -lunar
-	vec2 wavePixel = vec2(mod(pixelID,waveformSize.x), 1.0+floor(pixelID/waveformSize.x));
+	vec2 wavePixel = vec2(mod(pixelID, waveformSize.x), 1.0+floor(pixelID/waveformSize.x));
 	vec4 waveData = texture2D(waveformTexture, wavePixel / waveformSize);
 
 	int id = int(mod(wavePixel.x, 3.0));

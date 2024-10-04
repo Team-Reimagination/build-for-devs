@@ -7,12 +7,9 @@ int steps = 16;
 int stepsInside = 2;
 float strength = 0.0075;
 vec4 getColor(vec2 pos) {
-	if (pos.x < 0.0) pos.x = 0.0;
-	else if (pos.x > 1.0 - (1.0 / openfl_TextureSize.x)) pos.x = 1.0 - (1.0 / openfl_TextureSize.x);
-	if (pos.y < 0.0) pos.y = 0.0;
-	else if (pos.y > 1.0 - (1.0 / openfl_TextureSize.y)) pos.y = 1.0 - (1.0 / openfl_TextureSize.y);
-	// return textureCam(bitmap, pos);
-	return flixel_texture2D(bitmap, pos);
+	vec2 ps = (pos);
+	ps = clamp(ps, vec2(0.0), 1.0 - (1.0 / openfl_TextureSize.xy));
+	return flixel_texture2D(bitmap, (ps));
 }
 void main() {
 	// vec2 camPos = getCamPos(openfl_TextureCoordv);

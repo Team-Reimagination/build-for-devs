@@ -1,0 +1,16 @@
+Add Camera Zoom2.hx________PACKSEP________function onEvent(eventEvent)
+    if (eventEvent.event.name == "Add Camera Zoom2")
+        (Reflect.getProperty(PlayState.instance, eventEvent.event.params[1])).zoom += eventEvent.event.params[0];________PACKSEP________{
+    "params": [
+        {
+            "name": "Amount",
+            "type": "Float(0.001, 10, 0.01, 2)",
+            "defaultValue": "0.05"
+        },
+		{
+            "name": "Camera",
+            "type": "DropDown('camGame', 'camHUD')",
+            "defaultValue": "camGame"
+        }
+    ]
+}________PACKSEP________assets/editors/charter/event-icons/Unknown

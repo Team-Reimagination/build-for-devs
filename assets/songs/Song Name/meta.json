@@ -1,0 +1,15 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 100,
+	"difficulties": [
+		""
+	],
+	"parsedColor": -1,
+	"displayName": "Display Name",
+	"icon": "Icon",
+	"name": "Song Name",
+	"color": "#FFFFFF"
+}

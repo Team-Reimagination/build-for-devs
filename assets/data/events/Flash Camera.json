@@ -1,0 +1,39 @@
+{
+    "params": [
+        {
+            "name": "Bool",
+            "type": "Bool",
+            "defaultValue": false
+        },
+        {
+            "name": "Int",
+            "type": "Int(0, 99, 1)",
+            "defaultValue": 0
+        },
+        {
+            "name": "Float",
+            "type": "Float(0, 99, 1, 2)",
+            "defaultValue": 0.00
+        },
+        {
+            "name": "String",
+            "type": "String",
+            "defaultValue": "nothing"
+        },
+        {
+            "name": "StrumLine",
+            "type": "StrumLine",
+            "defaultValue": 0
+        },
+        {
+            "name": "ColorWheel",
+            "type": "ColorWheel",
+            "defaultValue": "#FFFFFF"
+        },
+        {
+            "name": "DropDown",
+            "type": "DropDown('entry one', 'entry two')",
+            "defaultValue": "entry one"
+        }
+    ]
+}
