@@ -1,3 +1,4 @@
+//
 import funkin.game.HudCamera;
 import funkin.backend.scripting.events.NoteHitEvent;
 
@@ -162,16 +163,18 @@ function postUpdate(elapsed) {
 	if (enableCameraHacks) {
 		for(p in strumLines)
 			p.notes.forEach(function(n) {
+				if(n.isSustainNote) return; // hacky fix for hold
 				n.y -= n.y % daPixelZoom;
 				n.x -= n.x % daPixelZoom;
 			});
 	}
 
+	var zoom = 1 / daPixelZoom / Math.min(FlxG.scaleMode.scale.x, FlxG.scaleMode.scale.y);
 	for(e in pixellyCameras) {
 		if (!e.exists) continue;
-		e.zoom = 1 / daPixelZoom / Math.min(FlxG.scaleMode.scale.x, FlxG.scaleMode.scale.y);
+		e.zoom = zoom;
 	}
 	for(e in pixellyShaders) {
-		e.pixelZoom = 1 / daPixelZoom / Math.min(FlxG.scaleMode.scale.x, FlxG.scaleMode.scale.y);
+		e.pixelZoom = zoom;
 	}
 }
